@@ -5,6 +5,36 @@
 [![License](https://img.shields.io/cocoapods/l/MathParser.svg?style=flat)](https://cocoapods.org/pods/MathParser)
 [![Platform](https://img.shields.io/cocoapods/p/MathParser.svg?style=flat)](https://cocoapods.org/pods/MathParser)
 
+## What it is:
+MathParser is a library written in swift that will allow a user to parse a String.
+
+## What you can do with it:
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Positive Exponents
+* Overload the operators.
+
+## How to use:
+Here is an example of how to use the library.
+``` swift
+let expr = Parser.parse(string: "1 + 2") // Will return an expression that can be evaluated.
+let exprValue = expr?.evaluate() // Evaluates the expression (will be 3 in this example)
+```
+
+To overload operators (this can be done if wanted):
+```swift
+Operators.addOp = ">"
+let ans = Parser.parse(string: "1 > 2")?.evaluate() // This will evaluate to 3 with the new operator
+```
+
+## Public methods:
+* Parser.parse
+  * This returns an Optional Expression. This will return nil if the String is unparseable.
+* Expression.evaluate
+  * This returns an Optional Decimal. This will only return nil if there is a division by 0.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
