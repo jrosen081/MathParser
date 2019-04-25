@@ -13,7 +13,7 @@ public class Parser {
 	/// Will return nil if the string is not parseable.
 	/// - parameter string: The string to parse
 	/// - returns: An expression that will result in the value
-	static func parse(string: String) -> Expression? {
+	public static func parse(string: String) -> Expression? {
 		let updatedString = Parser.changeMinusIntoOther(change: Operators.subOp, into: string)
 		guard updatedString.contains(Operators.divOp) || updatedString.contains(Operators.multOp) || updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) ||  updatedString.contains(Operators.powOp) || Decimal(string) != nil else {
 			return nil

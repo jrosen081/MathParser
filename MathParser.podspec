@@ -31,6 +31,8 @@ MathParser is a pod that parses strings to decimal values. It allows addition, s
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MathParser/Classes/**/*'
+
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'MathParser' => ['MathParser/Assets/*.png']
