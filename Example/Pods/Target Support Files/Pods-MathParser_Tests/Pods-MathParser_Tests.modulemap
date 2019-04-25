@@ -1,0 +1,6 @@
+framework module Pods_MathParser_Tests {
+  umbrella header "Pods-MathParser_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "MathParser",
+  "version": "0.1.0",
+  "summary": "A short description of MathParser.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jrosen081/MathParser",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jrosen081": "jrosen081@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jrosen081/MathParser.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MathParser/Classes/**/*"
+}
