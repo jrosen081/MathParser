@@ -1,5 +1,5 @@
 PODS:
-  - MathParser (0.1.0)
+  - MathParser (1.1)
 
 DEPENDENCIES:
   - MathParser (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MathParser: ea32273366558399ffebb8ce3d2af35e861af88d
+  MathParser: 58e32eb26084cc6994d767a815a99f3a8fdeb482
 
 PODFILE CHECKSUM: 7c2d152992eb08b384e49197e15a2f2ab40b9ac9
 

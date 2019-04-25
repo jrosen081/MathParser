@@ -69,7 +69,7 @@ public class Parser {
 			if let first = split.last, let firstExpr = Parser.parse(string: first) {
 				return split.dropLast().reversed().reduce(firstExpr as? Expression, {(result, next) in
 					if let val = result, let nextVal = Parser.parse(string: next) {
-						return PowExpression(leftExpression: val, rightExpression: nextVal)
+						return PowExpression(leftExpression: nextVal, rightExpression: val)
 					} else {
 						return nil
 					}

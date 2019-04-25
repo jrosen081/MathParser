@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2385EC36E9B32107642958BD49B85E7A /* MathParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9275708706B7AA30B61822265A78C8E9 /* MathParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67947D2E9EDA09DA735E73A9340660FD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB93489009265CAE9BE45C13A673DE /* ReplaceMe.swift */; };
+		0AA5B644327C656C9B0D57649951DC1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		42CF13766DDF29B4E967660690B3EDB9 /* MathParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBAC41A8C82B07621F91D53394E11A2 /* MathParser-dummy.m */; };
+		543039255A9D959D11AFFC811F67D9F6 /* MultExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7EF02126307274E5B7C5C9A26BAD09 /* MultExpression.swift */; };
+		649632F391D761661379DC6D9161A7F3 /* SubtractExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EACBE50671BE3E297FA0021E89B57 /* SubtractExpression.swift */; };
+		6B4AE653969E189BD332FF91C2E1456D /* OperatorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253922F565C5EFC35098C457D4A12B0 /* OperatorExtensions.swift */; };
 		6F58C8FF2945086B87453E0518CE155D /* Pods-MathParser_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC15327C94BF286687B6DEFCF9018E24 /* Pods-MathParser_Example-dummy.m */; };
+		8476119014FBD2F878D34B3CF630EB05 /* PowExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761DB7DB40CEB95F53A4636EECEE33E8 /* PowExpression.swift */; };
+		88AF02FC7DC23485C2EBD55A1B906EB1 /* MathParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4E3855D4B766ABC5057913CB73CC55 /* MathParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95F6FC5327AEBCB527F46B344F9048D3 /* Pods-MathParser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE28766E03EA28B447F979B752FE7B6 /* Pods-MathParser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BC8DED4DB9BF561577F3820143B6632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		A96ED5A94620EC4628CF169479D9BFE5 /* MathParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CA57E1EBB110C46803695A72FE14BB /* MathParser-dummy.m */; };
+		9F340EA35E9D04F008DC2865DF0F6ECF /* AddExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03CB584B48685EA3E5964A2F459AAFA /* AddExpression.swift */; };
 		AAF0609AA38ABA407154E4A2C6CE8086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		ABCBC55AECEDCC9C2FF9FD7DA400FB66 /* Pods-MathParser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A266745EFCF379A5F7479D684C241A74 /* Pods-MathParser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEA51563050DFC59FD1D5D6375FFF9A3 /* Pods-MathParser_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E20214FAC0DF54A7AEC8BB951DAD2DE /* Pods-MathParser_Tests-dummy.m */; };
-		EE76323A3753958C772C139AF8F0FA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		AFD0765A16A0A115B895B31E2B205925 /* DivExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597C9295DFF96456D31EBCC03ABDBEB /* DivExpression.swift */; };
+		CC41AAA2F3B3B320F78D99BB0DCBEAA4 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134D2A0D4D8BB64640BD242AC6B42DD /* Operators.swift */; };
+		D79BBF6E43CED198934D96856F559F04 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F1E5E0AA418D777A02A2BCDEB027 /* Expression.swift */; };
+		E4521CCD8FCA934982788DB4FD19AF39 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC71AAA100270E302169F3AECEF5F0D /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B62713CF68B87F1C9DB139B7DA6A1D19;
+			remoteGlobalIDString = 7676E33AAC85ACE71A75594BE7A322D5;
 			remoteInfo = MathParser;
 		};
 		8FB7FCD24863AD12BF31DEE3D78D32AE /* PBXContainerItemProxy */ = {
@@ -38,37 +46,45 @@
 
 /* Begin PBXFileReference section */
 		0261D8FE5E2692DC6B326E0D01F5C8E7 /* Pods-MathParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MathParser_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0EC71AAA100270E302169F3AECEF5F0D /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = MathParser/Classes/Source/Parser.swift; sourceTree = "<group>"; };
+		1134D2A0D4D8BB64640BD242AC6B42DD /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = MathParser/Classes/Source/Operators.swift; sourceTree = "<group>"; };
 		192D14B8B9828732591D48B554E01DAA /* Pods-MathParser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MathParser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		23CA57E1EBB110C46803695A72FE14BB /* MathParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MathParser-dummy.m"; sourceTree = "<group>"; };
-		269EB17179C73709DEF6AC5BFEADD2C9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		29404CEEE34A4E8F46F3CDDC03384D6C /* MathParser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MathParser-Info.plist"; sourceTree = "<group>"; };
 		2A4AE8B4EF26A4FA0ECAFB7AE61500A3 /* Pods-MathParser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MathParser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		31BAA9ED26FCAA8E780C46588A212597 /* MathParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MathParser-prefix.pch"; sourceTree = "<group>"; };
+		306BFB57F7DC9A4C93FDA32D17E78E05 /* MathParser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MathParser.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		32FB08B5BFB475898C895B65F37CF1BD /* Pods_MathParser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathParser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		382395782D0D33A89A7EF19C07427AFB /* Pods-MathParser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MathParser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		386E8B2FEA5440834F87ECD612F9B8AB /* Pods-MathParser_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MathParser_Tests-Info.plist"; sourceTree = "<group>"; };
+		3B4E3855D4B766ABC5057913CB73CC55 /* MathParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MathParser-umbrella.h"; sourceTree = "<group>"; };
 		3E20214FAC0DF54A7AEC8BB951DAD2DE /* Pods-MathParser_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MathParser_Tests-dummy.m"; sourceTree = "<group>"; };
-		44559CD77C3C2092EC4F0435AA068DBD /* MathParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MathParser.modulemap; sourceTree = "<group>"; };
+		3E5FB330A00F39A71CE9E32ACCA2B186 /* MathParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MathParser.modulemap; sourceTree = "<group>"; };
+		4B22F1E5E0AA418D777A02A2BCDEB027 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = MathParser/Classes/Source/Expression.swift; sourceTree = "<group>"; };
 		4B82C555D538448E75B6D25873F57EA1 /* Pods-MathParser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MathParser_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4F1F4686FB6E62A46EF213A3FEFBBFD1 /* MathParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MathParser-prefix.pch"; sourceTree = "<group>"; };
 		58290B2A3CECE274A27C792113668528 /* Pods_MathParser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathParser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B8FEC0536810EC9693E8700A9F1722E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6161A5E35561B6DA7949FAF7E8DD2B8B /* Pods-MathParser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MathParser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		675D276B48BDC1F6909D3937EF348A2F /* MathParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MathParser.xcconfig; sourceTree = "<group>"; };
+		6597C9295DFF96456D31EBCC03ABDBEB /* DivExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DivExpression.swift; path = MathParser/Classes/Source/DivExpression.swift; sourceTree = "<group>"; };
+		6ABBBCFD360118A62DA90EB8955FC7F5 /* MathParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MathParser.xcconfig; sourceTree = "<group>"; };
 		6C4ACB567151E62C58524D00A1B54074 /* Pods-MathParser_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MathParser_Example-Info.plist"; sourceTree = "<group>"; };
+		761DB7DB40CEB95F53A4636EECEE33E8 /* PowExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PowExpression.swift; path = MathParser/Classes/Source/PowExpression.swift; sourceTree = "<group>"; };
 		771708456C919A30F449B43FBDB518F2 /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9275708706B7AA30B61822265A78C8E9 /* MathParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MathParser-umbrella.h"; sourceTree = "<group>"; };
+		7D7EF02126307274E5B7C5C9A26BAD09 /* MultExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultExpression.swift; path = MathParser/Classes/Source/MultExpression.swift; sourceTree = "<group>"; };
+		9253922F565C5EFC35098C457D4A12B0 /* OperatorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorExtensions.swift; path = MathParser/Classes/Source/OperatorExtensions.swift; sourceTree = "<group>"; };
+		99C402A84436B17F85713D65525273E5 /* MathParser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MathParser-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A11DFF4CFFD2A6C2302B7E6B4704D601 /* Pods-MathParser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MathParser_Example.modulemap"; sourceTree = "<group>"; };
 		A266745EFCF379A5F7479D684C241A74 /* Pods-MathParser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MathParser_Example-umbrella.h"; sourceTree = "<group>"; };
+		AA9EACBE50671BE3E297FA0021E89B57 /* SubtractExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubtractExpression.swift; path = MathParser/Classes/Source/SubtractExpression.swift; sourceTree = "<group>"; };
 		BDE28766E03EA28B447F979B752FE7B6 /* Pods-MathParser_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MathParser_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BE46915BD175B652A7868333F0E7E6DA /* Pods-MathParser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MathParser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C03CB584B48685EA3E5964A2F459AAFA /* AddExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddExpression.swift; path = MathParser/Classes/Source/AddExpression.swift; sourceTree = "<group>"; };
 		C525F7BDE05B8F37B9B655F2230F8388 /* Pods-MathParser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MathParser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBBAC41A8C82B07621F91D53394E11A2 /* MathParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MathParser-dummy.m"; sourceTree = "<group>"; };
 		CE7CCFFC4FCC30483ECDE07B62DADEE8 /* Pods-MathParser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MathParser_Tests.modulemap"; sourceTree = "<group>"; };
+		D0296466AB169B206BBC820C1495B412 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D452D9FE38C077079AE85BD84E6136DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D65AA77F682002A0A263449B8E801977 /* Pods-MathParser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MathParser_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DC15327C94BF286687B6DEFCF9018E24 /* Pods-MathParser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MathParser_Example-dummy.m"; sourceTree = "<group>"; };
-		F469ECFE6DFD159DD90D2031DF18803C /* MathParser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MathParser.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F5EB93489009265CAE9BE45C13A673DE /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MathParser/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +104,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC92F61E234979FDFF4B9D46E028BCCD /* Frameworks */ = {
+		C6659F5326D84F2082B9CE48A599A9EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE76323A3753958C772C139AF8F0FA66 /* Foundation.framework in Frameworks */,
+				0AA5B644327C656C9B0D57649951DC1E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,14 +124,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		04D3AF748BBC0558851CEABFFD47244B /* Pod */ = {
+		52989890B25019A701F20FA3B8F507BB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B8FEC0536810EC9693E8700A9F1722E /* LICENSE */,
-				F469ECFE6DFD159DD90D2031DF18803C /* MathParser.podspec */,
-				269EB17179C73709DEF6AC5BFEADD2C9 /* README.md */,
+				6392DD7AD1BC34969DF86779B5CEC30D /* MathParser */,
 			);
-			name = Pod;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6392DD7AD1BC34969DF86779B5CEC30D /* MathParser */ = {
+			isa = PBXGroup;
+			children = (
+				C03CB584B48685EA3E5964A2F459AAFA /* AddExpression.swift */,
+				6597C9295DFF96456D31EBCC03ABDBEB /* DivExpression.swift */,
+				4B22F1E5E0AA418D777A02A2BCDEB027 /* Expression.swift */,
+				7D7EF02126307274E5B7C5C9A26BAD09 /* MultExpression.swift */,
+				9253922F565C5EFC35098C457D4A12B0 /* OperatorExtensions.swift */,
+				1134D2A0D4D8BB64640BD242AC6B42DD /* Operators.swift */,
+				0EC71AAA100270E302169F3AECEF5F0D /* Parser.swift */,
+				761DB7DB40CEB95F53A4636EECEE33E8 /* PowExpression.swift */,
+				AA9EACBE50671BE3E297FA0021E89B57 /* SubtractExpression.swift */,
+				BF38C50E90DE61F23DA3249ACFE0C5C3 /* Pod */,
+				F2EB57008C01DD523E293B25BD0F7715 /* Support Files */,
+			);
+			name = MathParser;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		8052DA53B8E1AE1E527BCD1D37E649F8 /* Pods-MathParser_Example */ = {
@@ -153,25 +186,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9FB403BBC233A96F34C9D345EEF8F7A2 /* Support Files */ = {
+		BF38C50E90DE61F23DA3249ACFE0C5C3 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				44559CD77C3C2092EC4F0435AA068DBD /* MathParser.modulemap */,
-				675D276B48BDC1F6909D3937EF348A2F /* MathParser.xcconfig */,
-				23CA57E1EBB110C46803695A72FE14BB /* MathParser-dummy.m */,
-				29404CEEE34A4E8F46F3CDDC03384D6C /* MathParser-Info.plist */,
-				31BAA9ED26FCAA8E780C46588A212597 /* MathParser-prefix.pch */,
-				9275708706B7AA30B61822265A78C8E9 /* MathParser-umbrella.h */,
+				D0296466AB169B206BBC820C1495B412 /* LICENSE */,
+				306BFB57F7DC9A4C93FDA32D17E78E05 /* MathParser.podspec */,
+				D452D9FE38C077079AE85BD84E6136DA /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MathParser";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				EF94A997F045C725D82188A10D88B14C /* Development Pods */,
+				52989890B25019A701F20FA3B8F507BB /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				8AEB88275CC5271CEA782BC42AA25340 /* Products */,
 				00A392926F2CF9B5BA9967ED25130E27 /* Targets Support Files */,
@@ -186,23 +215,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D64F2FCCEAFFD00BFBE74CEEA2A29BD5 /* MathParser */ = {
+		F2EB57008C01DD523E293B25BD0F7715 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5EB93489009265CAE9BE45C13A673DE /* ReplaceMe.swift */,
-				04D3AF748BBC0558851CEABFFD47244B /* Pod */,
-				9FB403BBC233A96F34C9D345EEF8F7A2 /* Support Files */,
+				3E5FB330A00F39A71CE9E32ACCA2B186 /* MathParser.modulemap */,
+				6ABBBCFD360118A62DA90EB8955FC7F5 /* MathParser.xcconfig */,
+				CBBAC41A8C82B07621F91D53394E11A2 /* MathParser-dummy.m */,
+				99C402A84436B17F85713D65525273E5 /* MathParser-Info.plist */,
+				4F1F4686FB6E62A46EF213A3FEFBBFD1 /* MathParser-prefix.pch */,
+				3B4E3855D4B766ABC5057913CB73CC55 /* MathParser-umbrella.h */,
 			);
-			name = MathParser;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		EF94A997F045C725D82188A10D88B14C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D64F2FCCEAFFD00BFBE74CEEA2A29BD5 /* MathParser */,
-			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MathParser";
 			sourceTree = "<group>";
 		};
 		FA96624F643AFC93BF048C87A6E1CB94 /* Pods-MathParser_Tests */ = {
@@ -224,11 +248,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9FB10D9994E40896ED52D244FF3724BE /* Headers */ = {
+		7DE7A991FE879486FBE04D553037BFD2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2385EC36E9B32107642958BD49B85E7A /* MathParser-umbrella.h in Headers */,
+				88AF02FC7DC23485C2EBD55A1B906EB1 /* MathParser-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,14 +275,14 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B62713CF68B87F1C9DB139B7DA6A1D19 /* MathParser */ = {
+		7676E33AAC85ACE71A75594BE7A322D5 /* MathParser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA0817F6EF3DDA81F37214F5139B4E8B /* Build configuration list for PBXNativeTarget "MathParser" */;
+			buildConfigurationList = 3B6DADEBA669803A718AAB3D2B2B01B3 /* Build configuration list for PBXNativeTarget "MathParser" */;
 			buildPhases = (
-				9FB10D9994E40896ED52D244FF3724BE /* Headers */,
-				486140CE3475FFF4489C854B4DF6E09E /* Sources */,
-				AC92F61E234979FDFF4B9D46E028BCCD /* Frameworks */,
-				08FCC88686FB534F320864AEF148E63E /* Resources */,
+				7DE7A991FE879486FBE04D553037BFD2 /* Headers */,
+				4424D61D8EE33825B9C5A4620B6382CD /* Sources */,
+				C6659F5326D84F2082B9CE48A599A9EA /* Frameworks */,
+				075E400DA66512286EED2816F8F000AB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -315,11 +339,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-					B62713CF68B87F1C9DB139B7DA6A1D19 = {
-						LastSwiftMigration = 1020;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -334,7 +353,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B62713CF68B87F1C9DB139B7DA6A1D19 /* MathParser */,
+				7676E33AAC85ACE71A75594BE7A322D5 /* MathParser */,
 				E14E102BADBE4D7A7AC604A6EC21BBD8 /* Pods-MathParser_Example */,
 				F292DA03FC9010B22A086D1B585FB33F /* Pods-MathParser_Tests */,
 			);
@@ -342,7 +361,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		08FCC88686FB534F320864AEF148E63E /* Resources */ = {
+		075E400DA66512286EED2816F8F000AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,12 +385,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		486140CE3475FFF4489C854B4DF6E09E /* Sources */ = {
+		4424D61D8EE33825B9C5A4620B6382CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A96ED5A94620EC4628CF169479D9BFE5 /* MathParser-dummy.m in Sources */,
-				67947D2E9EDA09DA735E73A9340660FD /* ReplaceMe.swift in Sources */,
+				9F340EA35E9D04F008DC2865DF0F6ECF /* AddExpression.swift in Sources */,
+				AFD0765A16A0A115B895B31E2B205925 /* DivExpression.swift in Sources */,
+				D79BBF6E43CED198934D96856F559F04 /* Expression.swift in Sources */,
+				42CF13766DDF29B4E967660690B3EDB9 /* MathParser-dummy.m in Sources */,
+				543039255A9D959D11AFFC811F67D9F6 /* MultExpression.swift in Sources */,
+				6B4AE653969E189BD332FF91C2E1456D /* OperatorExtensions.swift in Sources */,
+				CC41AAA2F3B3B320F78D99BB0DCBEAA4 /* Operators.swift in Sources */,
+				E4521CCD8FCA934982788DB4FD19AF39 /* Parser.swift in Sources */,
+				8476119014FBD2F878D34B3CF630EB05 /* PowExpression.swift in Sources */,
+				649632F391D761661379DC6D9161A7F3 /* SubtractExpression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +424,7 @@
 		07B0DF3DC6DA41250EEDBFCD484A7E40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MathParser;
-			target = B62713CF68B87F1C9DB139B7DA6A1D19 /* MathParser */;
+			target = 7676E33AAC85ACE71A75594BE7A322D5 /* MathParser */;
 			targetProxy = 527F7F11F75465BF4962DDDACA6E1334 /* PBXContainerItemProxy */;
 		};
 		844B6CEC37058C4CC84C5729780537DF /* PBXTargetDependency */ = {
@@ -409,6 +436,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		009D99A131536E4A52FBA1528D950ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABBBCFD360118A62DA90EB8955FC7F5 /* MathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MathParser/MathParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MathParser/MathParser-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MathParser/MathParser.modulemap";
+				PRODUCT_MODULE_NAME = MathParser;
+				PRODUCT_NAME = MathParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		40C8FFE6C061E93F36EFA3734A86F8A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE46915BD175B652A7868333F0E7E6DA /* Pods-MathParser_Tests.debug.xcconfig */;
@@ -476,9 +535,9 @@
 			};
 			name = Release;
 		};
-		55C7F77B26321A46627D9043B74C5FA0 /* Release */ = {
+		4A7314BAC14EACF38463451753E34731 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 675D276B48BDC1F6909D3937EF348A2F /* MathParser.xcconfig */;
+			baseConfigurationReference = 6ABBBCFD360118A62DA90EB8955FC7F5 /* MathParser.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -502,11 +561,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		564A6C970FFFB35E351B2FC53EBA6456 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -541,37 +599,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		6621432FB239EA92A652B55F005CF2EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 675D276B48BDC1F6909D3937EF348A2F /* MathParser.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MathParser/MathParser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MathParser/MathParser-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MathParser/MathParser.modulemap";
-				PRODUCT_MODULE_NAME = MathParser;
-				PRODUCT_NAME = MathParser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -734,6 +761,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B6DADEBA669803A718AAB3D2B2B01B3 /* Build configuration list for PBXNativeTarget "MathParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7314BAC14EACF38463451753E34731 /* Debug */,
+				009D99A131536E4A52FBA1528D950ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		42A57AE7ABC48827D44FDB74A2C46717 /* Build configuration list for PBXNativeTarget "Pods-MathParser_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -757,15 +793,6 @@
 			buildConfigurations = (
 				D3A19130E039E31DBED863A47AC4FB7E /* Debug */,
 				564A6C970FFFB35E351B2FC53EBA6456 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA0817F6EF3DDA81F37214F5139B4E8B /* Build configuration list for PBXNativeTarget "MathParser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6621432FB239EA92A652B55F005CF2EA /* Debug */,
-				55C7F77B26321A46627D9043B74C5FA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

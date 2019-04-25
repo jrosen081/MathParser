@@ -15,15 +15,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		71B9A0E8B821CE55CF0B70B8 /* Pods_MathParser_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD406FFE36BBFD005217056C /* Pods_MathParser_Tests.framework */; };
-		A02FFFDA2270B40C009CA849 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFD92270B40C009CA849 /* Operators.swift */; };
-		A02FFFDC2270B418009CA849 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFDB2270B418009CA849 /* Expression.swift */; };
-		A02FFFDE2270B423009CA849 /* AddExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFDD2270B423009CA849 /* AddExpression.swift */; };
-		A02FFFE02270B430009CA849 /* SubtractExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFDF2270B430009CA849 /* SubtractExpression.swift */; };
-		A02FFFE22270B43B009CA849 /* MultExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFE12270B43B009CA849 /* MultExpression.swift */; };
-		A02FFFE52270B451009CA849 /* DivExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFE42270B451009CA849 /* DivExpression.swift */; };
-		A02FFFE72270B460009CA849 /* PowExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFE62270B460009CA849 /* PowExpression.swift */; };
-		A02FFFE92270B49E009CA849 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFE82270B49E009CA849 /* Parser.swift */; };
-		A02FFFEB2270D4B2009CA849 /* OperatorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02FFFEA2270D4B2009CA849 /* OperatorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,16 +43,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9EAE01F51E93AE2B2F04C9DE /* Pods-MathParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathParser_Example.release.xcconfig"; path = "Target Support Files/Pods-MathParser_Example/Pods-MathParser_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A02FFFD92270B40C009CA849 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		A02FFFDB2270B418009CA849 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
-		A02FFFDD2270B423009CA849 /* AddExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpression.swift; sourceTree = "<group>"; };
-		A02FFFDF2270B430009CA849 /* SubtractExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractExpression.swift; sourceTree = "<group>"; };
-		A02FFFE12270B43B009CA849 /* MultExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultExpression.swift; sourceTree = "<group>"; };
-		A02FFFE42270B451009CA849 /* DivExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivExpression.swift; sourceTree = "<group>"; };
-		A02FFFE62270B460009CA849 /* PowExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowExpression.swift; sourceTree = "<group>"; };
-		A02FFFE82270B49E009CA849 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		A02FFFEA2270D4B2009CA849 /* OperatorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorExtensions.swift; sourceTree = "<group>"; };
-		B17CA383EAEAB0EA4B71B9BD /* MathParser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MathParser.podspec; path = ../MathParser.podspec; sourceTree = "<group>"; };
+		B17CA383EAEAB0EA4B71B9BD /* MathParser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MathParser.podspec; path = ../MathParser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CF5722F0A317ED8916F1D345 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD406FFE36BBFD005217056C /* Pods_MathParser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathParser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD19D0DAFFDDBE1EE4908E5 /* Pods-MathParser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathParser_Tests.release.xcconfig"; path = "Target Support Files/Pods-MathParser_Tests/Pods-MathParser_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +83,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				A02FFFD82270B3EF009CA849 /* Source */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for MathParser */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -167,22 +148,6 @@
 				CF5722F0A317ED8916F1D345 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		A02FFFD82270B3EF009CA849 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A02FFFD92270B40C009CA849 /* Operators.swift */,
-				A02FFFDB2270B418009CA849 /* Expression.swift */,
-				A02FFFDD2270B423009CA849 /* AddExpression.swift */,
-				A02FFFDF2270B430009CA849 /* SubtractExpression.swift */,
-				A02FFFE12270B43B009CA849 /* MultExpression.swift */,
-				A02FFFE42270B451009CA849 /* DivExpression.swift */,
-				A02FFFE62270B460009CA849 /* PowExpression.swift */,
-				A02FFFE82270B49E009CA849 /* Parser.swift */,
-				A02FFFEA2270D4B2009CA849 /* OperatorExtensions.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		D3569C37B1D9E96F3EB44F71 /* Frameworks */ = {
@@ -370,16 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				A02FFFE52270B451009CA849 /* DivExpression.swift in Sources */,
-				A02FFFE92270B49E009CA849 /* Parser.swift in Sources */,
-				A02FFFE22270B43B009CA849 /* MultExpression.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				A02FFFEB2270D4B2009CA849 /* OperatorExtensions.swift in Sources */,
-				A02FFFDA2270B40C009CA849 /* Operators.swift in Sources */,
-				A02FFFDC2270B418009CA849 /* Expression.swift in Sources */,
-				A02FFFDE2270B423009CA849 /* AddExpression.swift in Sources */,
-				A02FFFE72270B460009CA849 /* PowExpression.swift in Sources */,
-				A02FFFE02270B430009CA849 /* SubtractExpression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
