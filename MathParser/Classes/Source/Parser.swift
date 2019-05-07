@@ -14,11 +14,32 @@ public class Parser {
 	/// - parameter string: The string to parse
 	/// - returns: An expression that will result in the value
 	public static func parse(string: String) -> Expression? {
-		let updatedString = Parser.changeMinusIntoOther(change: Operators.subOp, into: string)
+		var updatedString = Parser.changeMinusIntoOther(change: Operators.subOp, into: string)
 		guard updatedString.contains(Operators.divOp) || updatedString.contains(Operators.multOp) || updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) ||  updatedString.contains(Operators.powOp) || Decimal(string) != nil else {
 			return nil
 		}
-		if updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) {
+		if updatedString.contains("(") {
+			let idx = updatedString.firstIndex(of: "(")!
+			var parenCounts = 0
+			var nextIdx = updatedString.index(after: idx)
+			while nextIdx != updatedString.endIndex {
+				if updatedString[nextIdx] == ")"  {
+					parenCounts -= 1
+				} else if updatedString[nextIdx] == "(" {
+					parenCounts += 1
+				}
+				if parenCounts == -1 {
+					updatedString.replaceSubrange(idx..<nextIdx, with: "\(decimal: Parser.parse(string: String(updatedString[updatedString.index(after: idx)..<nextIdx]))?.evaluate())")
+					break
+				}
+				nextIdx = updatedString.index(after: nextIdx)
+			}
+			if updatedString.contains("(") {
+				return nil
+			} else {
+				return Parser.parse(string: updatedString)
+			}
+		} else if updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) {
 			let addAll = updatedString.split(separator: Operators.addOp[Operators.addOp.startIndex]).map(String.init)
 			let subMids = addAll.map({string in string.split(separator: Operators.subOp.first!).map(String.init)})
 			return subMids.reduce(Decimal(0) as Expression, {(result: Expression?, next: [String]) -> Expression? in
@@ -119,6 +140,16 @@ extension Decimal: Expression {
 			self.init(string: string.replacingOccurrences(of: Operators.subOp, with: "-"))
 		} else {
 			self.init(string: string)
+		}
+	}
+}
+
+extension String.StringInterpolation {
+	mutating func appendInterpolation(decimal: Decimal?) {
+		if let d = decimal {
+			self.appendInterpolation(d)
+		} else {
+			self.appendInterpolation("nil")
 		}
 	}
 }
