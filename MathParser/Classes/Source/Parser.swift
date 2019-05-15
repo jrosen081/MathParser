@@ -15,7 +15,7 @@ public class Parser {
 	/// - returns: An expression that will result in the value
 	public static func parse(string: String) -> Expression? {
 		var updatedString = Parser.changeMinusIntoOther(change: Operators.subOp, into: string)
-		guard updatedString.contains(Operators.divOp) || updatedString.contains(Operators.multOp) || updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) ||  updatedString.contains(Operators.powOp) || Decimal(string) != nil else {
+		guard updatedString.contains(Operators.divOp) || updatedString.contains(Operators.multOp) || updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) ||  updatedString.contains(Operators.powOp) || updatedString.contains("(") || Decimal(string) != nil else {
 			return nil
 		}
 		if updatedString.contains("(") {
@@ -29,16 +29,20 @@ public class Parser {
 					parenCounts += 1
 				}
 				if parenCounts == -1 {
+					// Allows multiplication without the * sign
+					var myIdx = updatedString.index(after: nextIdx)
+					while (myIdx != updatedString.endIndex && updatedString.index(after: myIdx) != updatedString.endIndex && updatedString[myIdx] == " ") {
+						myIdx = updatedString.index(after: myIdx)
+					}
+					if myIdx != updatedString.endIndex && updatedString[myIdx] == "(" {
+						updatedString.insert("*", at: myIdx)
+					}
 					updatedString.replaceSubrange(idx..<nextIdx, with: "\(decimal: Parser.parse(string: String(updatedString[updatedString.index(after: idx)..<nextIdx]))?.evaluate())")
-					break
+					return Parser.parse(string: updatedString)
 				}
 				nextIdx = updatedString.index(after: nextIdx)
 			}
-			if updatedString.contains("(") {
-				return nil
-			} else {
-				return Parser.parse(string: updatedString)
-			}
+			return nil
 		} else if updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) {
 			let addAll = updatedString.split(separator: Operators.addOp[Operators.addOp.startIndex]).map(String.init)
 			let subMids = addAll.map({string in string.split(separator: Operators.subOp.first!).map(String.init)})
@@ -88,7 +92,7 @@ public class Parser {
 		} else if updatedString.contains(Operators.powOp) {
 			let split = updatedString.split(separator: Operators.powOp.first!).lazy.map(String.init).map({$0.trimmingCharacters(in: .whitespaces)})
 			if let first = split.last, let firstExpr = Parser.parse(string: first) {
-				return split.dropLast().reversed().reduce(firstExpr as? Expression, {(result, next) in
+				return split.dropLast().reversed().reduce(firstExpr, {(result: Expression?, next: String) in
 					if let val = result, let nextVal = Parser.parse(string: next) {
 						return PowExpression(leftExpression: nextVal, rightExpression: val)
 					} else {
@@ -122,7 +126,7 @@ extension String {
 	func endsWithNum() -> Bool {
 		let val = self.trimmingCharacters(in: .whitespaces)
 		if let lastVal = val.last {
-			return Float(String(lastVal)) != nil
+			return Float(String(lastVal)) != nil || String(lastVal) == ")"
 		} else {
 			return false
 		}

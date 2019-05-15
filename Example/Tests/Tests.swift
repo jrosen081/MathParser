@@ -56,5 +56,11 @@ class Tests: XCTestCase {
 		XCTAssertNil(Parser.parse(string: "2 + ((((((((4 * 3) - 4) + 2)"))
 		XCTAssertEqual(Parser.parse(string: "(2 + (3 + (4 * (5)) + 2))")?.evaluate(), 27)
 	}
+	
+	func testParenthesisMult() {
+		XCTAssertNotNil(Parser.parse(string: "2 + (3 + 4)(5 + 3)"))
+		XCTAssertEqual(58, Parser.parse(string: "2 + (3 + 4)(5 + 3)")?.evaluate())
+		XCTAssertEqual(Parser.parse(string: "2 * (2 + 4)(1 * 10) - 4")?.evaluate(), 116)
+	}
     
 }
