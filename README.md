@@ -13,7 +13,7 @@ MathParser is a library written in swift that will allow a user to parse a Strin
 * Subtraction
 * Multiplication
 * Division
-* Positive Exponents
+* Exponents
 * Overload the operators.
 
 ## How to use:
