@@ -50,8 +50,11 @@ extension Optional where Wrapped == Decimal{
 	static func ^^^ (lhs: Wrapped?, rhs: Wrapped?) ->Wrapped? {
 		if let l = lhs, let r = rhs {
 			var value: Wrapped = 1
-			for _ in 0 ..< Int(r.doubleValue){
+			for _ in 0 ..< Int(abs(r.doubleValue)){
 				value *= l
+			}
+			if r < 0 {
+				value = 1 / value
 			}
 			return value
 		} else {

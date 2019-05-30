@@ -18,6 +18,8 @@ public class Parser {
 		guard updatedString.contains(Operators.divOp) || updatedString.contains(Operators.multOp) || updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) ||  updatedString.contains(Operators.powOp) || updatedString.contains("(") || Decimal(string) != nil else {
 			return nil
 		}
+		// Handles anything with parenthesis.
+		// Since that needs to be parsed first, it gets the value and inputs it into the string.
 		if updatedString.contains("(") {
 			let idx = updatedString.firstIndex(of: "(")!
 			var parenCounts = 0
@@ -29,13 +31,14 @@ public class Parser {
 					parenCounts += 1
 				}
 				if parenCounts == -1 {
-					// Allows multiplication without the * sign
+					// Allows multiplication without the mult sign
 					var myIdx = updatedString.index(after: nextIdx)
 					while (myIdx != updatedString.endIndex && updatedString.index(after: myIdx) != updatedString.endIndex && updatedString[myIdx] == " ") {
 						myIdx = updatedString.index(after: myIdx)
 					}
+					// If the next thing is an open parenthesis, we should multiply
 					if myIdx != updatedString.endIndex && updatedString[myIdx] == "(" {
-						updatedString.insert("*", at: myIdx)
+						updatedString.insert(Character(Operators.multOp), at: myIdx)
 					}
 					updatedString.replaceSubrange(idx..<nextIdx, with: "\(decimal: Parser.parse(string: String(updatedString[updatedString.index(after: idx)..<nextIdx]))?.evaluate())")
 					return Parser.parse(string: updatedString)
@@ -44,6 +47,8 @@ public class Parser {
 			}
 			return nil
 		} else if updatedString.contains(Operators.addOp) || updatedString.contains(Operators.subOp) {
+			// Deals with Adding and Subtracting
+			// Splits the values by addition and subtracting and evaluates those last
 			let addAll = updatedString.split(separator: Operators.addOp[Operators.addOp.startIndex]).map(String.init)
 			let subMids = addAll.map({string in string.split(separator: Operators.subOp.first!).map(String.init)})
 			return subMids.reduce(Decimal(0) as Expression, {(result: Expression?, next: [String]) -> Expression? in
@@ -67,6 +72,8 @@ public class Parser {
 				}
 			})
 		} else if updatedString.contains(Operators.multOp) || updatedString.contains(Operators.divOp) {
+			// Deals with Multiplication and Division
+			// Splits the values by multiplication and division and evaluates those last
 			let multAll = updatedString.split(separator: Operators.multOp.first!).map(String.init)
 			let divMids = multAll.map({string in string.split(separator: Operators.divOp.first!).map(String.init)})
 			return divMids.reduce(Decimal(1), {(result: Expression?, next: [String]) -> Expression? in
@@ -90,10 +97,12 @@ public class Parser {
 				}
 			})
 		} else if updatedString.contains(Operators.powOp) {
+			// Deals with Power
 			let split = updatedString.split(separator: Operators.powOp.first!).lazy.map(String.init).map({$0.trimmingCharacters(in: .whitespaces)})
-			if let first = split.last, let firstExpr = Parser.parse(string: first) {
+			if let first = split.last, let firstExpr = Parser.parse(string: first.replacingOccurrences(of: "~", with: Operators.subOp)) {
+				// This gets reversed due to the fact that power is right associative.
 				return split.dropLast().reversed().reduce(firstExpr, {(result: Expression?, next: String) in
-					if let val = result, let nextVal = Parser.parse(string: next) {
+					if let val = result, let nextVal = Parser.parse(string: next.replacingOccurrences(of: "~", with: Operators.subOp)) {
 						return PowExpression(leftExpression: nextVal, rightExpression: val)
 					} else {
 						return nil
@@ -123,10 +132,12 @@ public class Parser {
 }
 
 extension String {
+	/// Does the String end with a number?
+	/// - returns: Whether or not the String ends with a valid number value
 	func endsWithNum() -> Bool {
 		let val = self.trimmingCharacters(in: .whitespaces)
 		if let lastVal = val.last {
-			return Float(String(lastVal)) != nil || String(lastVal) == ")"
+			return Float(String(lastVal)) != nil || String(lastVal) == ")" || !Operators.allOperators.contains(String(lastVal))
 		} else {
 			return false
 		}
@@ -139,6 +150,7 @@ extension Decimal: Expression {
 		return self
 	}
 	
+	/// Initializes the decimal with a string input (hopefully)
 	init?(_ string: String) {
 		if let _ = Decimal(string: string.replacingOccurrences(of: Operators.subOp, with: "-")) {
 			self.init(string: string.replacingOccurrences(of: Operators.subOp, with: "-"))
@@ -149,6 +161,9 @@ extension Decimal: Expression {
 }
 
 extension String.StringInterpolation {
+	/// Appends a possible decimal value.
+	/// If the value is nil, it prints "nil"
+	/// - Parameter decimal: The number to append
 	mutating func appendInterpolation(decimal: Decimal?) {
 		if let d = decimal {
 			self.appendInterpolation(d)

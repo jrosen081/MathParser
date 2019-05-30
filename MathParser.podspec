@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MathParser'
-  s.version          = '1.4'
+  s.version          = '1.5'
   s.summary          = 'A simple parser for Mathematical Expressions.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ MathParser is a pod that parses strings to decimal values. It allows addition, s
 
   s.source_files = 'MathParser/Classes/**/*'
 
-  s.swift_version = '5.0'
+  s.swift_version = '5'
   
   # s.resource_bundles = {
   #   'MathParser' => ['MathParser/Assets/*.png']
